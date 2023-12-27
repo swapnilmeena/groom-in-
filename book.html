@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>groom-in_bookings</title>
+    <style>
+    *{
+        margin: 10px;
+    }
+    #form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    .container{
+        background-image: url(formbg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+    }
+    #book{
+        width: 80px;
+        height: 30px;
+        background-color: rgb(71, 119, 0);
+        color: white;
+        border-radius: 30px;
+        margin-left: 130px;
+    }
+    
+
+
+
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+     <form id="form" onsubmit="sendEmail(); reset(); return false;">
+
+        <fieldset>
+            <legend>BOOK YOUR SLOT</legend></BR>
+            <label for="firstname " >FIRST NAME</label>
+            <input type="text"name = firstname id="firstname" placeholder="first name" required>
+<br>
+            <label for="lastname ">LAST NAME</label>
+            <input type="text"name = lastname id="lastname" placeholder="last name" required> <br>
+
+            <label  for="contact">CONTACT.NO</label>
+           <input type="text" name="contact" id="contact" placeholder="phone number" required> <br>
+
+           <label  for="email">EMAIL</label>
+           <input type="email" name="email" id="email" placeholder="enter your email" required> <br>
+
+           <label for="date">DATE</label>
+           <input type="date" name="date" id="date" placeholder="choose date" required > <br>
+
+           <label for="time">TIME</label>
+           <input type="time" name="time" id="time" placeholder="choose time between 9am to 9pm" required>
+           <br>
+
+           <legend>Your Service Requirements</legend>
+            <textarea name="service" id="service" cols="40" rows="7" placeholder="enter your service requirements"></textarea>
+        
+          
+
+           <br>
+           <button id="book" type="submit">BOOK</button>
+
+
+
+        </fieldset>
+     
+     </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"> </script>
+<script>
+function sendEmail(){
+    
+    
+  Email.send({
+    SecureToken : "cc566ad8-70d6-455d-9284-ee18a4704eac",
+    To : 'swapnilmeena2002@gmail.com',
+    From : "swapnilmeena2002@gmail.com",
+    Subject : "booking",
+    Body : "firstname :" + document.getElementById("firstname").value
+          + "<br/> last name :" + document.getElementById("lastname").value
+          + "<br/> contact :" + document.getElementById("contact").value
+          + "<br/> Email :" + document.getElementById("email").value
+          + "<br/> Date :" + document.getElementById("date").value
+          + "<br/> time :" + document.getElementById("time").value
+          + "<br/> services requirements :" + document.getElementById("service").value
+
+
+
+
+
+}).then(
+  message => alert("details submitted succesfully")
+);
+    
+}
+
+
+</script>
+     
+</body>
+</html>
