@@ -1,0 +1,101 @@
+.hairsmenu{
+    width: 500px;
+    height: 250px;
+    background-color: bisque;
+    transition: all 0.1s linear 0.1s;
+    margin: 90px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 50px brown;
+}
+
+.hairsmenu:hover{
+    transform: scale(1.2);
+}
+
+.nailsmenu{
+    width: 500px;
+    height: 250px;
+    background-color: bisque;
+    transition: all 0.1s linear 0.1s;
+    margin: 90px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 50px rgb(0, 160, 13);
+    margin-left: 700px;
+}
+
+.nailsmenu:hover{
+    transform: scale(1.2);
+}
+
+.hairremovalmenu{
+    width: 500px;
+    height: 250px;
+    background-color: bisque;
+    transition: all 0.1s linear 0.1s;
+    margin: 90px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 50px rgb(211, 226, 0);
+   
+}
+
+.hairremovalmenu:hover{
+    transform: scale(1.2);
+}
+
+.bridalmenu{
+    width: 500px;
+    height: 250px;
+    background-color: bisque;
+    transition: all 0.1s linear 0.1s;
+    margin: 90px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 50px rgb(255, 6, 6);
+    margin-left: 700px;
+   
+}
+
+.bridalmenu:hover{
+    transform: scale(1.2);
+}
+
+.special{
+    margin: 110px;
+    box-shadow: 10px 10px 50px orange;
+    border: 3px solid yellow;
+    
+    transition: all 0.1s linear 0.1s;
+}
+.special:hover{
+    transform: scale(1.1);
+}
+
+.offer1{
+margin: 20px;
+display: flex;
+justify-content: center;
+box-shadow: 10px 10px 50px rgba(131, 0, 102, 0.5);
+color: darkmagenta;
+background-color: rgb(157, 111, 201);
+border-radius: 50px;
+transition: all 0.1s linear 0.1s;
+}
+.offer1:hover{
+    transform: scale(1.1);
+}
+
+
+
+.offer2{
+   margin: 20px;
+   display: flex;
+   justify-content: center;
+   box-shadow: 10px 10px 50px rgb(117, 0, 45);
+   color: rgb(167, 2, 2); 
+   background-color: rgb(255, 144, 144);
+   border-radius: 50px;
+   transition: all 0.1s linear 0.1s;
+}
+
+.offer2:hover{
+    transform: scale(1.1);
+}

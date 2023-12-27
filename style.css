@@ -1,0 +1,330 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 16px;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    'header header '
+    ' content nav'
+    ' footer footer';
+    grid-template-columns: 6fr 1fr ;
+    grid-template-rows: 100px 1fr ;
+}
+header,
+footer,
+main,
+nav {
+  padding: 20px;
+  border: rgb(73, 2, 2) 2px solid;
+  background-color: rgb(255, 243, 243);
+}
+
+header {
+  
+  grid-area: header;
+  background-color: rgb(255, 255, 255);
+  border: rgb(73, 2, 2) 2px solid;
+ text-align: center;
+  color: rgb(255, 253, 254);
+  font-size: larger;
+ position: fixed;
+ background-image:url(backgroundofheader.avif);
+ background-repeat: no-repeat;
+ background-size: cover;
+
+}
+
+nav {
+  grid-area: nav;
+  width: 180px;
+
+}
+
+main {
+  grid-area: content;
+  background-color:rgb(255, 190, 190);
+  color: rgb(117, 4, 4);
+background-image: url(backgroundmain.avif);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+
+footer {
+  grid-area: footer;
+  
+}
+
+#slogan{
+  text-align: center;
+  color: rgb(243, 81, 135);
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-family: algerian;
+}
+
+  
+#logo{
+  width: 150px;
+  height: 150px;
+  margin-left: 500px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  box-shadow: 10px 10px 50px rgb(236, 130, 130);
+  border-radius: 30px;
+  transition: all 1.5s linear 0.5s;
+  
+}
+#logo:hover{
+   transform:rotate(360deg);
+}
+
+
+
+#buttons{
+padding-left: 2px;
+padding-right: 2px;
+transition-property:all;
+transition-duration: 0.2s;
+transition-delay: 0.2s;
+transition-timing-function: linear;
+}
+
+#buttons:hover{
+color: white;
+background-color: rgb(255, 158, 190);
+}
+
+#hairimage{
+  width: 300px;
+  height: 300px;
+  margin: 50px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 60px rgb(255, 77, 107);
+  transition: all 1s linear 0.2s;
+}
+
+#hairimage:hover{
+  transform: scale(1.1);
+}
+
+.hairtext{
+  width: 400px;
+  height: 100px;
+  background-color: rgb(233, 1, 90);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-left: 120px;
+border-radius: 50px;
+box-shadow: 10px 10px 60px rgb(255, 77, 107); 
+}
+
+#skincareimage{
+  width: 300px;
+  height: 300px;
+  margin: 50px;
+  margin-left: 170px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 60px rgb(255, 241, 45);
+  transition: all 1s linear 0.2s;
+}
+
+#skincareimage:hover{
+  transform: scale(1.1);
+}
+
+.skincaretext{
+  width: 400px;
+  height: 100px;
+  background-color: rgb(255, 240, 25);
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-left: 120px;
+border-radius: 50px;
+box-shadow: 10px 10px 60px rgb(189, 192, 8); 
+}
+
+#nailcareimage{
+  width: 300px;
+  height: 300px;
+  margin: 50px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 60px rgb(25, 42, 139);
+  transition: all 1s linear 0.2s;
+}
+
+#nailcareimage:hover{
+  transform: scale(1.1);
+}
+
+.nailcaretext{
+  width: 400px;
+  height: 100px;
+  background-color: rgb(2, 0, 139);
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-left: 120px;
+border-radius: 50px;
+box-shadow: 10px 10px 60px rgb(34, 104, 255); 
+}
+
+#makeupartistryimage{
+  width: 300px;
+  height: 300px;
+  margin: 50px;
+  margin-left: 170px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 60px rgb(18, 255, 18);
+  transition: all 1s linear 0.2s;
+}
+
+#makeupartistryimage:hover{
+  transform: scale(1.1);
+}
+
+.makeupartistrytext{
+  width: 400px;
+  height: 100px;
+  background-color: rgb(32, 112, 13);
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-left: 120px;
+border-radius: 50px;
+box-shadow: 10px 10px 60px rgb(58, 255, 32); 
+}
+
+#bridalimage{
+  width: 300px;
+  height: 300px;
+  margin: 50px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 60px rgb(255, 19, 39);
+  transition: all 1s linear 0.2s;
+}
+
+#bridalimage:hover{
+  transform: scale(1.1);
+}
+
+.bridaltext{
+  width: 400px;
+  height: 100px;
+  background-color: rgb(156, 0, 0);
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-left: 120px;
+border-radius: 50px;
+box-shadow: 10px 10px 60px rgb(255, 52, 52); 
+}
+
+#galleryimage2{
+  width: 280px;
+  height: 400px;
+  margin: 90px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 50px rgb(219, 52, 80);
+  transition: all 1s linear 0.2s;
+
+}
+
+
+
+#galleryimage1{
+  width: 260px;
+  height: 400px;
+  margin: 90px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 50px rgb(219, 52, 80);
+  transition: all 1s linear 0.2s;
+}
+
+#galleryimage3{
+  width: 300px;
+  height: 350px;
+  border: 10px;
+  margin: 90px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 50px rgb(219, 52, 80);
+  transition: all 1s linear 0.2s;
+
+}
+
+#galleryimage4{
+  width: 300px;
+  height: 350px;
+  border: 10px;
+  margin: 90px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 50px rgb(219, 52, 80);
+  transition: all 1s linear 0.2s;
+}
+
+#ownerpic{
+width: 200px;
+height: 200px;
+border-radius: 160px;
+box-shadow: 10px 10px 50px magenta;
+margin: 50px;
+transition: all 1s linear 0.2s;
+float: right;
+}
+
+#ownerpic:hover{
+  transform: scale(1.1);
+}
+
+#slotbookheading{
+  color: rgb(219, 0, 102);
+  font-size: 20px;
+  background-color: rgb(251, 255, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transition: all 0.2s linear 0.2s;
+  padding: 5px;
+  box-shadow: 10px 10px 40px rgb(253, 0, 156);
+
+}
+
+#slotbookheading:hover{
+  transform: skew(20deg);
+}
+
+#booknowbutton{
+  width: 85px;
+  height: 40px;
+  border-radius: 18px;
+  transition: all 0.1s linear 0.1s;
+  margin: 30px;
+}
+#booknowbutton:hover{
+  transform: scale(1.1);
+}
+@media(max-width:500px){
+  .main{
+    grid-template-columns: 1fr;
+    
+  }
+}
