@@ -36,8 +36,7 @@ header {
  background-image:url(backgroundofheader.avif);
  background-repeat: no-repeat;
  background-size: cover;
-  width: 100vw;
-
+ width: 100vw;   
 }
 
 nav {
